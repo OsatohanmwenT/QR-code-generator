@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Web Developer Starter - devchallenges.io</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="any">
+</head>
+<body>
+    <div class="container">
+        <div class="url-tab active">
+            <img src="images/logo-qr-generator.svg" alt="logo-qr-generator" class="logo">
+            <div class="input-section">
+                <label for="url-code">QR Code</label>
+                <input type="url" name="url" id="url-input" placeholder="Enter an url">
+                <input type="button" value="QR code" id="generate-btn">
+            </div>
+        </div>
+        <div class="qrcode-tab">
+            <div class="qr">
+                <div class="qrcode"></div>
+            </div>
+            <div class="btn">
+                <button type="button" id="download-btn">
+                    <span>Dowload</span>
+                <img src="images/" alt=""></button>
+                <button type="button" id="copy-btn">
+                    <span>Share</span>
+                    <img src="images/" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js" integrity="sha512-is1ls2rgwpFZyixqKFEExPHVUUL+pPkBEPw47s/6NDQ4n1m6T/ySeDW3p54jp45z2EJ0RSOgilqee1WhtelXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
